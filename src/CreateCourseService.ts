@@ -12,7 +12,7 @@ interface Course {
 }
 
 class CreateCourseService {
-    execute({ name, duration, educator}: Course) {
+    execute({ name, duration = 8, educator}: Course) {
         console.log(name, duration, educator)
     }
 }
